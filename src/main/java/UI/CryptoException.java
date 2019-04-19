@@ -1,3 +1,5 @@
+package UI;
+
 public class CryptoException extends Exception {
 
     public CryptoException() {

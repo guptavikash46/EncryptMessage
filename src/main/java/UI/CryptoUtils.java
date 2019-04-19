@@ -1,3 +1,5 @@
+package UI;
+
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
@@ -21,11 +23,6 @@ public class CryptoUtils {
             throws CryptoException {
         doCrypto(Cipher.ENCRYPT_MODE, key, inputFile, outputFile);
     }
-
-//    public static void decrypt(String key, File inputFile, File outputFile)
-//            throws CryptoException {
-//        doCrypto(Cipher.DECRYPT_MODE, key, inputFile, outputFile);
-//    }
 
     private static void doCrypto(int cipherMode, String key, File inputFile,
                                  File outputFile) throws CryptoException {
