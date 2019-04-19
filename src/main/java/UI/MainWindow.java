@@ -1,8 +1,7 @@
 package UI;
 
 import javax.swing.*;
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
+import java.awt.*;
 import java.io.*;
 
 public class MainWindow {
@@ -61,6 +60,7 @@ public class MainWindow {
         JFrame jFrame = new JFrame("MainWindow");
         jFrame.setContentPane(new MainWindow().mainPanel);
         jFrame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        jFrame.setMinimumSize(new Dimension(600, 500));
         jFrame.pack();
         jFrame.setVisible(true);
 
